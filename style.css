@@ -1,0 +1,227 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+list-style: none;
+text-decoration: none;
+}
+
+:root{
+    --main-color:rgb(223, 67, 0);
+    --text-color:#fff;
+    --bg-color:#221f32;
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font:0.9rem;
+}
+*::selection{
+    background: var(--main-color);
+    color:#fff;
+}
+
+body{
+    color: var(--text-color);
+    background:var(--bg-color);
+}
+header{
+    display: flex;
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color);
+}
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s ;
+    
+}
+
+#menu-icon{
+   font-size: 2rem;
+   cursor: pointer;
+   display: none;
+}
+
+
+
+
+/*Home seccion*/
+
+
+
+
+section{
+    padding: 70px 17%;
+}
+.home{
+    width: 100%;
+    min-width: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    position: relative;
+    image-orientation:unset;
+    padding-top: 10%;
+}
+
+.home-img img{
+     max-width: 100%;
+     width: 600px;
+     height: auto;
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--main-color);
+    animation-delay: 1.2s;
+}
+
+.home-text h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: 0.4s;
+}
+
+
+/*About seccion*/
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1,5rem;
+    align-items: center;
+}
+
+.about-img img{
+     max-width: 100%;
+     width: 480px;
+     height: 75%;
+     margin-right: 100%;
+}
+
+.about-text span{
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    text-transform: capitalize;
+    word-spacing: 5px;
+    text-align: justify;
+    margin-top: 3%;
+}
+
+.about-text p{
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: xx-large;
+    letter-spacing: 2px;
+
+}
+
+
+
+/*History seccion*/
+
+.history-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items:center;
+}
+
+.box{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img img{
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: min-content;
+}
+
+.heading a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.heading h2{
+    grid-area: main;
+}
+
+
+
+/*Starlink secction*/
+.texto span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto p{
+    display: flex;
+    position: relative;
+    top: 40px; 
+    left: 40px;
+    margin: auto;
+    padding: auto;
+    margin-bottom: auto;
+    margin-top: 0%;
+    text-align: justify;
+}
